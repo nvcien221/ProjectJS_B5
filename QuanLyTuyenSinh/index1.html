@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Tuyển Sinh</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style1.css">
+</head>
+<body>
+    <div class="card" style="width: 18rem;">
+        <div class="card-header text-white bg-dark text-center">
+            Quản Lý Tuyển Sinh
+        </div>
+        <div class="card-body">                
+            <form>
+                <div class="form-group">                       
+                    <input type="number" class="form-control" id="inputTotal" placeholder="Điểm chuẩn">                  
+                    </div>
+                    <!-- dropdown/ combobox  -->
+                    <select class="form-control" id="selectKV">
+                      <option>Chọn khu vực</option>
+                      <option value="2">A</option>
+                      <option value="1">B</option>
+                      <option value="0.5">C</option>
+                    </select>
+                    <select class="form-control mt-3" id="selectDT">
+                        <option>Chọn đối tượng</option>
+                        <option value="2.5">1</option>
+                        <option value="1.5">2</option>
+                        <option value="1">3</option>
+                      </select>
+                  </div>
+                  <div class="form-group">                    
+                    <input type="number" class="form-control" id="testScore1" placeholder="Điểm môn thứ nhất">                  
+                 </div>
+                 <div class="form-group">                    
+                    <input type="number" class="form-control" id="testScore2" placeholder="Điểm môn thứ hai">                  
+                 </div>
+                 <div class="form-group">                    
+                    <input type="number" class="form-control" id="testScore3" placeholder="Điểm môn thứ ba">                  
+                 </div>
+                <button type="button" class="btn btn-danger" id="btnCalc">Kết Quả</button>
+                <p id="txtResult" style="text-center"></p>
+            </form>
+        </div>
+      </div>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="./js/main1.js"></script>
+</body>
+</html>
